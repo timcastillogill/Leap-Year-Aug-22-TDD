@@ -17,5 +17,9 @@ class LeapYearCalculatorTest {
 	not_divisible_by_four_returns_false() {
 		assertFalse(new LeapYearCalculator().checkYear(3));
 	}
-
+	@Test
+	public void
+	leap_years_divisible_by_4_and_are_not_divisible_by_400() {
+		assertFalse(new LeapYearCalculator().checkYear(1800));
+	}
 }
